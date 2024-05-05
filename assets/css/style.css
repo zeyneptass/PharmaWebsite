@@ -321,14 +321,14 @@ a {
   gap: 15px;
 }
 .team-card-social-media a {
-  display: inline block;
-  width: 20px;
-  height: 20px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
   color: #ffffff;
   text-decoration: underline;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
-  align-items: center;
 }
 .team-card-social-media a.icon-instagram {
   background-image: url("../img/icon/icon-instagram.svg");
