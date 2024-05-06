@@ -8,7 +8,7 @@ a {
 }
 
 .top-bar {
-  background-color: #0152A8;
+  background-color: var(--main-blue);
   color: #ffffff;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -20,7 +20,7 @@ a {
 
 .top-bar .icon {
   display: inline-block;
-  background-color: #095FBA;
+  background-color: var(--main-blue);
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -52,9 +52,9 @@ a {
   color: #ffffff;
 }
 .btn-main-blue-outline {
-  border: 1.5px solid #0152A8;
+  border: 1.5px solid --main-blue;
   padding: 5px;
-  background-color: DFDFDF;
+  background-color: #DFDFDF;
 }
 
 .service-card {
@@ -154,7 +154,7 @@ a {
   justify-content: center;
   width: 60px;
   height: 60px;
-  border: 1px solid #0FE3AF;
+  border: 1px solid --main-green;
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -255,12 +255,11 @@ a {
 .why-choose-us-url {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 910px;
+  justify-content: center;
   -moz-column-gap: 50px;
        column-gap: 50px;
   row-gap: 40px;
-  justify-content: center;
+  max-width: 910px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -274,7 +273,7 @@ a {
   background-image: url(../img/icon/Tick.svg);
   width: 20px;
   height: 20px;
-  display: inline;
+  display: inline-block;
   margin-right: 5px;
   background-size: contain;
   background-position: center;
@@ -284,7 +283,7 @@ a {
 }
 
 .bg-main-blue {
-  background-color: #0152A8;
+  background-color: var(--main-blue);
 }
 
 .bg-main-green {
@@ -349,7 +348,12 @@ a {
   opacity: 1;
 }
 .slider-main-wrapper .slider-main {
-  --slider-height: 80dvh;
+  --slider-height: 30dvh;
+}
+@media (min-width: 768px) {
+  .slider-main-wrapper .slider-main {
+    --slider-height: 80dvh;
+  }
 }
 .slider-main-wrapper .slider-main-content {
   display: flex;
@@ -407,10 +411,6 @@ a {
   max-width: 150px;
 }
 
-.article-title {
-  padding-left: 18px;
-}
-
 .blog-card {
   display: flex;
   margin-bottom: 30px;
@@ -425,21 +425,29 @@ a {
      object-fit: cover;
 }
 .blog-card-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding-left: 20px;
+  padding-right: 50px;
+  padding-left: 10px;
 }
 .blog-card-info-time {
   display: inline-block;
+  letter-spacing: 5px;
   font-weight: 200;
   padding: 5px 20px;
+  border: 1px solid #cecece;
   font-size: 0.85rem;
+  margin-bottom: 20px;
 }
 .blog-card-info-title {
   color: #1c1c1c;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 120%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 footer {
@@ -474,10 +482,10 @@ footer .icon-mail {
   border-radius: 50%;
 }
 footer .icon-phone {
-  background-image: url("../img/icon/phone.svg");
+  background-image: url("../img/icon/telephone.svg");
 }
 footer .icon-mail {
-  background-image: url("../img/icon/mail.svg");
+  background-image: url("../img/icon/email.svg");
 }
 footer .input-newsletter {
   border: none;
