@@ -394,6 +394,10 @@ a {
                 font-weight: 700;
                 color: #143450;
                 line-height: 120%;
+                font-size: 2rem;
+                @media (min-width:768px) {
+                    font-size: 3.5rem;
+                }
             }
 
             &-desc {
@@ -545,4 +549,8 @@ footer {
             background-image: url("../img/icon/footer-twitter.svg");
         }
     }
+}
+
+.fs-2{
+    font-size: 1rem !important;
 }

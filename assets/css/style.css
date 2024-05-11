@@ -379,6 +379,12 @@ a {
   font-weight: 700;
   color: #143450;
   line-height: 120%;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .slider-main-wrapper .slider-main-content-title {
+    font-size: 3.5rem;
+  }
 }
 .slider-main-wrapper .slider-main-content-desc {
   font-size: 1rem;
@@ -522,4 +528,8 @@ footer .footer-link-social .icon-facebook {
 }
 footer .footer-link-social .icon-twitter {
   background-image: url("../img/icon/footer-twitter.svg");
+}
+
+.fs-2 {
+  font-size: 1rem !important;
 }/*# sourceMappingURL=style.css.map */
