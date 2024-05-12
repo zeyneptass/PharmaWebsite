@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --main-blue: #0152A8;
   --main-green: #0FE3AF;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -42,6 +48,14 @@ a {
   background-color: var(--main-green);
   padding: 16px 36px;
   text-decoration: none;
+}
+@media (min-width: 760px) {
+  .btn-main-green {
+    padding: 16px 36px;
+  }
+}
+.btn-main-green:hover {
+  background-color: var(--main-blue);
 }
 
 .btn-main-blue {

@@ -1,12 +1,18 @@
 // $mainGreen #0FE3AF;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --main-blue: #0152A8;
     --main-green: #0FE3AF;
 }
 
-a {
-    text-decoration: none;
+html,
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+a{
+   text-decoration: none;
 }
 
 .top-bar {
@@ -44,6 +50,12 @@ a {
     background-color: var(--main-green);
     padding: 16px 36px;
     text-decoration: none;
+    @media(min-width:760px){
+        padding: 16px 36px;
+    }
+    &:hover{
+        background-color: var(--main-blue);
+    }
 }
 
 .btn-main-blue {
